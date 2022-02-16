@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import TutorialDataService from "../services/TutorialDataService";
+import TutorialDataService from "@/components/tutorials/TutorialDataService";
 export default {
   name: "tutorials-list",
   data() {

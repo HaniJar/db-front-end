@@ -4,17 +4,17 @@ const routes = [
     path: "/",
     alias: "/tutorials",
     name: "tutorials",
-    component: () => import("./components/TutorialsList"),
+    component: () => import("@/components/tutorials/TutorialsList"),
   },
   {
     path: "/tutorials/:id",
     name: "tutorial-details",
-    component: () => import("./components/Tutorial"),
+    component: () => import("@/components/tutorials/Tutorial"),
   },
   {
     path: "/add",
     name: "add",
-    component: () => import("./components/AddTutorial"),
+    component: () => import("@/components/tutorials/AddTutorial"),
   },
 ];
 const router = createRouter({
